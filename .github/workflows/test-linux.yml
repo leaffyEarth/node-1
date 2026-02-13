@@ -42,8 +42,7 @@ permissions:
 
 jobs:
   test-linux:
-    if: github.event.pull_request.draft == false
-    runs-on: ${{ matrix.os }}
+    runs-on: monkci-ubuntu-24.04-4
     strategy:
       fail-fast: false
       matrix:
